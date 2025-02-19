@@ -1,0 +1,12 @@
+{
+    "name": "Codespace with Subversion",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-azuretools.vscode-docker"
+    ],
+    "postCreateCommand": "apt-get update && apt-get install -y subversion"
+}
