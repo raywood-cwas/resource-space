@@ -1,5 +1,5 @@
 {
-    "name": "Codespace with Subversion",
+    "name": "Codespace with ResourceSpace",
     "dockerFile": "Dockerfile",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
@@ -8,5 +8,5 @@
         "ms-vscode.cpptools",
         "ms-azuretools.vscode-docker"
     ],
-    "postCreateCommand": "apt-get update && apt-get install -y subversion"
+    "postCreateCommand": "apt-get update && apt-get install -y subversion && service mysql start && service apache2 start"
 }
